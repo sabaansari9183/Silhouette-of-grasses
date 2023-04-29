@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<style>
+
+</style>
+<body>
+    <section class="sec1">
+        <div class="container">
+            <h2 class="title">Revealing elements on scroll</h2>
+            <div class="content">
+                <div class="image">
+                    <img src="silhouette-of-grasses.jpg" alt="grass">
+                </div>
+                <div class="textbox">
+                    <h3>silhouette of grasses</h3>
+                    <p>Seems so beautiful, serene and nostalgic.That scent reminds of our sweet memories.</p>
+                </div>
+                <div class="mediaicons">
+                    <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="container">
+            <h3 class="section-title">Section 2</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="misty-forest.jpg" alt="misty Forest">
+                </div>
+                <div class="info">
+                    <h3 class="info-title">Misty Forest</h3>
+                    <p>The forest has a calming and therapeutic effect on me. I enjoy listening to its music  the chirping of the birds, the trickling of water from the leaves,
+                         the sound of flowing streams, and not to forget the sounds made by other animals and insects that I would not be able to identify. I love taking pictures of nature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="container">
+            <h3 class="section-title">Section 3</h3>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href="#"><i class="fab fa-facebook"> Facebook</i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"> Instagram</i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"> Twitter</i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin">LinkedIn </i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"> youTube</i></a></li>
+                </div>
+                <div class="image">
+                    <img src="gardens.jpg" alt="Garden">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+        
+    <script>
+        // scroll animation basic options
+        ScrollReveal({
+             //reset: true,
+             distance: '60px',
+             duration: 2500,
+             delay: 400
+            });
+            //target elements and specify options to create reveal animation
+            ScrollReveal().reveal('.title, .section-title', { delay: 500 });
+            ScrollReveal().reveal('.sec1 .image', { delay: 600, origin: 'left'  });
+            ScrollReveal().reveal('.sec1 .textbox', { delay: 600, origin: 'right' });
+            ScrollReveal().reveal('.sec1 .mediaicons i', { delay: 600, origin: 'top', interval: 200 });
+            ScrollReveal().reveal('.sec2 .image, .info', { delay: 600, origin: 'left'  });
+            ScrollReveal().reveal('.sec3 .image', { delay: 600, origin: 'left'  });
+            ScrollReveal().reveal('.sec3 .media-info li', { delay: 600, origin: 'right', interval: 200 });
+
+    </script>
+
+
+</body>
+</html>
